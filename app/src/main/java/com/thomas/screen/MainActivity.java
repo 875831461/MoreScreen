@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity
         }
 
     }
+
     private Handler mHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(@NonNull Message msg) {

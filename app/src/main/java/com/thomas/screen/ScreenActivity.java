@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * 显示两种方式DisplayManager MediaRouter
+ * 优化后息屏亮屏可以马上获取到屏幕id
  */
 public class ScreenActivity extends AppCompatActivity {
 
@@ -130,9 +130,7 @@ public class ScreenActivity extends AppCompatActivity {
             customPresentation.dismiss();
         }
         DisplayManager displayManager = (DisplayManager) getSystemService(DISPLAY_SERVICE);
-        if (displayManager != null){
-            displayManager.unregisterDisplayListener(mDisplayListener);
-        }
+        displayManager.unregisterDisplayListener(mDisplayListener);
     }
 
     public void changePresentationDataClick(View view) {
