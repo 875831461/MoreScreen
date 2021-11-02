@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MoreScreen</string>
+    <string name="change_presentation_data">刷新副屏数据</string>
+</resources>
